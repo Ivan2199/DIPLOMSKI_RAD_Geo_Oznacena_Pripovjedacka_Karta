@@ -1,0 +1,124 @@
+.user-management {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.user-management h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #084874;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #084874;
+  padding: 12px;
+  text-align: center;
+}
+
+.user-table th {
+  background-color: #084974;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #e8f4fa;
+}
+
+.user-table tr:hover {
+  background-color: #d1e7f3;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #084874;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #3a99ff;
+}
+
+.pagination button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.admin-user-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.set-as-admin-action-button,
+.delete-user-action-button {
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.set-as-admin-action-button {
+  background-color: #3a99ff;
+}
+
+.delete-user-action-button {
+  background-color: #e74c3c;
+}
+
+.set-as-admin-action-button:hover,
+.delete-user-action-button:hover {
+  background-color: #084974;
+}
+
+.set-as-admin-action-button:active,
+.delete-user-action-button:active {
+  background-color: #084974;
+  transform: scale(0.95);
+}
+
+.set-as-admin-action-button:hover {
+  background-color: #3178b7;
+}
+
+.delete-user-action-button:hover {
+  background-color: #c0392b;
+}
+
+.set-as-admin-action-button:active {
+  background-color: #084974;
+}
+
+.delete-user-action-button:active {
+  background-color: #a93226;
+}

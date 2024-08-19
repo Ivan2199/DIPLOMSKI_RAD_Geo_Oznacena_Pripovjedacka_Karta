@@ -1,0 +1,25 @@
+.story-image-slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.story-image-slider-container img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.story-image-slider-container img.slide-in {
+  opacity: 1;
+}
+
+.story-image-slider-container img.slide-out {
+  opacity: 0;
+}

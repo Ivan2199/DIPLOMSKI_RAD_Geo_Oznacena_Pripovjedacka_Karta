@@ -1,0 +1,54 @@
+.map-toggle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+}
+
+.switch {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 44px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  background-color: rgb(234, 243, 251);
+  border-radius: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider:before {
+  content: "";
+  background-image: url('../../public/assets/world.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 56px;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  width: 36px;
+  background-image: url('../../public/assets/globe.svg');
+  background-size: cover;
+  border-radius: 50%;
+}

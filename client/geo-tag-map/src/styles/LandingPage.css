@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landing-page{
+  font-family: 'Roboto', sans-serif;
+  background-color: #F5F5F5;
+}
+
+.landing-page-navigation {
+  z-index: 90;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 100px;
+  width: 100%;
+  transition: background-color 0.3s ease; 
+}
+
+
+.landing-page-navigation.transparent {
+  background-color: transparent;
+}
+.landing-page-navigation.transparent h1,
+.landing-page-navigation.transparent ul li a,
+.landing-page-navigation.transparent .login-button{
+  color: white;
+}
+.landing-page-navigation.transparent .registration-button{
+  background-color: white;
+  color: #084874;
+}
+.landing-page-navigation.transparent .registration-button:hover{
+  background-color: #084874;
+  color: white;
+}
+
+.landing-page-navigation.solid {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 10px 70px rgba(126, 125, 125, 0.25);
+}
+
+.landing-page-navigation h1 {
+  font-size: 1.7em;
+  font-weight: 550;
+  color: #084874;
+}
+
+.landing-page-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.landing-page-navigation ul li {
+  margin: 0 20px;
+}
+
+.landing-page-navigation ul li a {
+  color: #084874;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.landing-page-navigation ul li a:hover {
+  color: #3a99ff;
+}
+
+.login-registration-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.login-registration-button .login-button{
+  margin-right: 20px;
+  color: #084874;
+}
+.login-registration-button .login-button:hover{
+  color: #3a99ff;
+}
+
+.login-registration-button .registration-button{
+  background-color: #084874;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.login-registration-button .registration-button:hover{
+  background-color: #3a99ff;
+}
+
+.landing-page-header-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+  text-align: center;
+  color: white;
+  background-color: white;
+}
+
+.landing-page-header-image-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  pointer-events: all;
+  background: #85848414;
+}
+
+.landing-page-header-image img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: end;
+}
+
+.hero-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 50px;
+  color: #084874;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.hero-content .btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.hero-content .btn-primary:hover {
+  background-color: #084874;
+}
+
+.content-section {
+  display: flex;
+  padding: 50px;
+  margin-top: 10%;
+}
+
+.about-section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  background-color: #ffffff;
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section-information{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.content-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #084874;
+  
+}
+.landing-page-events,
+.landing-page-tourist-sites{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#globe-container,
+#map-container{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+.landing-page-footer {
+  width:100%;
+  height: auto;
+  color: black;
+  text-align: center;
+  padding: 50px 100px;
+}
+
+.landing-page-footer p {
+  border-top: 1px solid #084874;
+  padding: 50px;
+  margin: 0;
+}

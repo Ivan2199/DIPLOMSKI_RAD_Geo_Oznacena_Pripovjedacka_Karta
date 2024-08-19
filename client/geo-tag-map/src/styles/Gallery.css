@@ -1,0 +1,76 @@
+.gallery {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: black;
+}
+.link-back{
+  position: absolute;
+  text-decoration: none;
+  color: aliceblue;
+  bottom: 20px;
+  left:20px;
+  padding: 10px;
+  z-index: 20;
+}
+.link-back:hover{
+  background-color: #3aa0a5;
+  color: black;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.slideC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  width: 100%;
+  height: 100%; 
+}
+
+.slide {
+  position: absolute;
+  width: 65%; 
+  height: 65%;
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.slide img {
+  width: auto;
+  height: 100%;
+}
+
+.btns {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3aa0a5;
+}
+

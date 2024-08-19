@@ -1,0 +1,146 @@
+.container-registration-form {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  max-width: 1000px;
+  padding: 30px;
+  background-color: rgba(60, 60, 60, 0.7);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: width 0.3s ease-in-out;
+}
+
+.container-registration-form.with-image {
+  width: 50%;
+}
+.container-registration-form h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fafafa;
+  margin-bottom: 30px;
+}
+
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-data-insert,
+.profile-image-insert {
+  flex: 1 1 45%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.profile-image-insert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image-preview {
+  max-width: 100%;
+  max-height: 550px;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
+
+.container-registration-form .form-label {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-registration-form .form-control {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container-registration-form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.container-registration-form .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.container-registration-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.container-registration-form .login-paragraph {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container-registration-form .login-paragraph a {
+  text-decoration: none;
+  color: rgb(250, 229, 201);
+  transition: color 0.3s;
+}
+
+.container-registration-form .login-paragraph a:hover {
+  color: lightskyblue;
+}
+
+.container-registration-form .go-to-login {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container-registration-form .go-to-login .login {
+  font-size: 18px;
+  text-decoration: none;
+  color: #e9e9e9;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #444;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.container-registration-form .go-to-login .login:hover {
+  color: #333;
+  background-color: #e9e9e9;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.disable-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  pointer-events: all;
+  background: rgba(0, 0, 0, 0.5);
+}
